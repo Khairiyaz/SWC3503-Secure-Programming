@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - Gym Management{% endblock %}
+
+{% block content %}
+    <h1>Gym member management system</h1>
+    <h1>Login</h1>
+    <form method="POST">
+        <input type="text" name="username" required pattern="[A-Za-z0-9]+" title="Only letters and numbers allowed" placeholder="Username">
+        <input type="password" name="password" required minlength="6" placeholder="Password">
+        <button type="submit">Login</button>
+    </form>   
+{% endblock %}

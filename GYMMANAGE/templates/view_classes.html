@@ -1,0 +1,11 @@
+{% extends 'base.html' %}
+
+{% block title %}Login - Gym Management{% endblock %}
+
+{% block content %}
+<h1>Classes List</h1>
+<ul>
+    {% for class in classes %}
+        <li>{{ class[1] }} - {{ class[2] }}</li>
+    {% endfor %}
+{% endblock %}
